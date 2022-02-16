@@ -3,16 +3,16 @@ import { Route, Routes } from 'react-router-dom';
 
 
 import Home from './components/Home/Home';
-// import Fav from './components/FavList/FavList';
-// import  Navbar  from './components/navbar/Navbar';
+import Fav from './components/FavList/FavList';
+import  Navbar  from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div>
-       {/* <Navbar/> */}
+       <Navbar/>
       <Routes>
           <Route path='/' exact  element={<Home/>} />
-          {/* <Route path='/favorite' exact element={<Fav/>} /> */}
+          <Route path='/favorite' exact element={<Fav/>} />
       </Routes>
     </div>
   );
